@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  touch-action: manipulation;
+}
+
+@keyframes scale-feedback {
+  0% {
+    transform: scale(1);
+  }
+  
+  
+  .leaflet-container {
+  height: 100vh !important;
+  width: 100vw !important;
+  max-height: 100vh;
+  max-width: 100vw;
+}
+  100% {
+    transform: scale(1);
+  }
+}
+
+.scale-feedback {
+  animation: scale-feedback 160ms ease-out;
+}
+
+@keyframes scale-feedback {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.scale-feedback {
+  animation: scale-feedback 160ms ease-out;
+}

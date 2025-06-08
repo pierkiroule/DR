@@ -1,0 +1,42 @@
+.leaflet-container {
+  background: #f8f9fb;
+  z-index: 0 !important;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.leaflet-interactive {
+  transition: stroke 0.3s ease, fill-opacity 0.3s ease;
+  cursor: pointer;
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+button:hover {
+  background-color: #222;
+}
+
+input {
+  padding: 5px 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #000;
+  font-size: 14px;
+  font-family: monospace;
+  outline-offset: 2px;
+}
+
+input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 5px rgba(59,130,246,0.5);
+}
